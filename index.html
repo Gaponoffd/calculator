@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calculator__content">
+                <form action="">
+                    <input type="text" disabled class="calculator__inpt" value="0" id="display">
+                    <table class="calculator__btns">
+                        <tr class="calculator__row">
+                            <td class="calculator__column">
+                                <button type="button" class="clear-btn btn" id="ce">CE</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="clear-btn btn" id="c">C</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="operation btn">/</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="operation btn">*</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__row">
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">7</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">8</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">9</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="operation btn">-</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__row">
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">4</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">5</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">6</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="operation btn">+</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__row">
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">1</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">2</button>
+                            </td>
+                            <td class="calculator__column">
+                                <button type="button" class="number btn">3</button>
+                            </td>
+                            <td class="calculator__column" rowspan="2">
+                                <button type="button" class="operation btn btn_height">=</button>
+                            </td>
+                        </tr>
+                        <tr class="calculator__row">
+                            <td class="calculator__column" colspan="2">
+                                <button type="button" class="number btn">0</button>
+                            </td>
+                            <!-- <td class="calculator__column">
+                                <button type="button" class="number btn">0</button>
+                            </td> -->
+                            <td class="calculator__column">
+                                <button type="button" class="btn" id="decimal">.</button>
+                            </td>
+                            <!-- <td class="calculator__column">
+                                <button type="button" class="operation btn" id="result">=</button>
+                            </td> -->
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
